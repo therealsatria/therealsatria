@@ -27,15 +27,15 @@ namespace AirAccess.Database
             base.OnModelCreating(modelBuilder);
 
             // Configure your entity mappings here
-            modelBuilder.Entity<Airline>().ToTable("Airlines");
-            modelBuilder.Entity<Airport>().ToTable("Airports");
-            modelBuilder.Entity<Flight>().ToTable("Flights");
-            modelBuilder.Entity<Passenger>().ToTable("Passengers");
-            modelBuilder.Entity<Seat>().ToTable("Seats");
-            modelBuilder.Entity<Ticket>().ToTable("Tickets");
-            modelBuilder.Entity<Booking>().ToTable("Bookings");
-            modelBuilder.Entity<Payment>().ToTable("Payments");
-            modelBuilder.Entity<FlightRoute>().ToTable("FlightRoutes");
+            // modelBuilder.Entity<Airline>().ToTable("Airlines");
+            // modelBuilder.Entity<Airport>().ToTable("Airports");
+            // modelBuilder.Entity<Flight>().ToTable("Flights");
+            // modelBuilder.Entity<Passenger>().ToTable("Passengers");
+            // modelBuilder.Entity<Seat>().ToTable("Seats");
+            // modelBuilder.Entity<Ticket>().ToTable("Tickets");
+            // modelBuilder.Entity<Booking>().ToTable("Bookings");
+            // modelBuilder.Entity<Payment>().ToTable("Payments");
+            // modelBuilder.Entity<FlightRoute>().ToTable("FlightRoutes");
 
             // Configure relationships
             modelBuilder.Entity<FlightRoute>()
