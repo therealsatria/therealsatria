@@ -26,8 +26,8 @@ namespace AirAccess.Repository
             if (airline != null)
             {
                 _context.Airlines.Remove(airline);
+                await _context.SaveChangesAsync();
             }
-            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Airline>> GetAllAsync()
@@ -37,15 +37,11 @@ namespace AirAccess.Repository
 
         public async Task<Airline> GetByIdAsync(Guid id)
         {
-            return await _context.Airlines.FindAsync(id);
+            var airline = await _context.Airlines.FindAsync(id);
+            return airline!;
         }
 
-        Task<List<Airline>> IAirlineRepository.GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        async Task<Airline> IAirlineRepository.UpdateAsync(Airline request)
+        public async Task<Airline?> UpdateAsync(Guid id, Airline request)
         {
             var airline = await _context.Airlines.FindAsync(request.Id);
             if (airline != null)
