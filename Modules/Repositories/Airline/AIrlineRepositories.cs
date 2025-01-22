@@ -1,5 +1,5 @@
 using AirAccess.Database;
-using AirAccess.Models;
+using AirAccess.Modules.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AirAccess.Repository

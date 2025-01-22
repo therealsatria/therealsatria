@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AirAccess.Models
+namespace AirAccess.Modules.Models
 {
     public class Passenger
     {

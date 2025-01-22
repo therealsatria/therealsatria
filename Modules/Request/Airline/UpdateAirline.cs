@@ -1,4 +1,4 @@
-namespace AirAccess.Request.Airline
+namespace AirAccess.Modules.Request.Airline
 {
     public class UpdateAirlineRequest
     {

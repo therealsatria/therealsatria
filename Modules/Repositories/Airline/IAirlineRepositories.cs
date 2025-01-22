@@ -1,4 +1,4 @@
-using AirAccess.Models;
+using AirAccess.Modules.Models;
 
 namespace AirAccess.Repository
 {
