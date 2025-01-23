@@ -114,5 +114,30 @@ namespace AirAccess.Modules.Controllers
                 });
             }            
         }
+
+        [HttpDelete("{id}", Name = "DeleteAirline")]
+        [Tags("Airline")]
+        public async Task<IActionResult> DeleteAsync(Guid id)
+        {
+            try
+            {
+                await _airlineService.DeleteAsync(id);
+                return Ok(new ResponseBuilder<object>()
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    Message = "Airline deleted successfully",
+                    Success = true
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResponseBuilder<object>()
+                {
+                    StatusCode = HttpStatusCode.BadRequest,
+                    Message = ex.Message,
+                    Success = false
+                });
+            }
+        }
     }
 }
