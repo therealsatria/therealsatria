@@ -1,4 +1,6 @@
 using AirAccess.Database;
+using AirAccess.Modules.Services;
+using AirAccess.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,13 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+// Add the Airline repository and service to the container
+builder.Services.AddScoped<IAirlineRepository, AirlineRepositories>();
+builder.Services.AddScoped<IAirlineService, AirlineService>();
+
+// Add controllers to the container
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +33,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Use controllers
+app.MapControllers();
+
 app.Run();
-
-

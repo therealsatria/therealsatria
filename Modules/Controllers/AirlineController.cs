@@ -11,7 +11,6 @@ namespace AirAccess.Modules.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class AirlineController : ControllerBase
     {
         private readonly IAirlineService _airlineService;
