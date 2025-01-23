@@ -27,14 +27,19 @@ namespace AirAccess.Modules.Services
             return await _repository.GetAllAsync();
         }
 
-        public async Task<Airline?> GetByIdAsync(Guid id)
+        public async Task<Airline> GetByIdAsync(Guid id)
         {
             return await _repository.GetByIdAsync(id);
         }
 
-        public async Task<Airline?> UpdateAsync(Guid id, Airline request)
+        public async Task<Airline> UpdateAsync(Guid id, Airline request)
         {
-            return await _repository.UpdateAsync(id, request);
+            var result = await _repository.UpdateAsync(id, request);
+            if (result == null)
+            {
+                throw new InvalidOperationException("Update operation failed, result is null.");
+            }
+            return result;
         }
     }
 }

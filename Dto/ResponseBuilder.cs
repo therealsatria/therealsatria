@@ -4,18 +4,18 @@ namespace KelanisCoalTerminal.Infrastructures.Dto
 {
     public class ResponseBuilder<T>
     {
-        public ResponseBuilder(
+        //public ResponseBuilder(
         // bool success,
         // HttpStatusCode statusCode,
         // string message,
         // T data
-        )
-        {
+        //)
+        //{
             // Success = success;
             // StatusCode = statusCode;
             // Message = message;
             // Data = data;
-        }
+        //}
         public bool Success
         {
             get; set;
@@ -26,11 +26,11 @@ namespace KelanisCoalTerminal.Infrastructures.Dto
             get; set;
         }
 
-        public string Message
+        public required string Message
         {
             get; set;
         }
-        public T Data
+        public T? Data
         {
             get; set;
         }

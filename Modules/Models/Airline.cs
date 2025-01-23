@@ -7,7 +7,6 @@ namespace AirAccess.Modules.Models
         [Key]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = "Airline Name is required")]
         [StringLength(100, ErrorMessage = "Airline Name cannot exceed 100 characters")]
         public required string AirlineName { get; set; }
         public required string AirlineCode { get; set; }
