@@ -7,13 +7,10 @@ namespace AirAccess.Modules.Models
     {
          [Key]
         public Guid Id { get; set; }
-
         public required DateTime BookingDate { get; set; } = DateTime.Now; // Set default value
-
-        [Required]
         public Guid PassengerId { get; set; }
         [ForeignKey("PassengerId")]
-        public Passenger Passenger { get; set; }
+        public Passenger? Passenger { get; set; }
         public bool BookingStatus { get; set; }
 
 

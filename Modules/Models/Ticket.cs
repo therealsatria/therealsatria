@@ -7,15 +7,10 @@ namespace AirAccess.Modules.Models
     {
         [Key]
         public Guid Id { get; set; }
-
-        [Required(ErrorMessage = "Ticket Number is required")]
-        public string TicketNumber { get; set; }
-
-        
+        public required string TicketNumber { get; set; }
         public Guid BookingId { get; set; }
         [ForeignKey("BookingId")]
         public required Booking Booking { get; set; }
-
         public Guid SeatId { get; set; }
         [ForeignKey("SeatId")]
         public required Seat Seat { get; set; }
