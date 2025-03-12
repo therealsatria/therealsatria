@@ -1,4 +1,4 @@
-# Hi there! 👋 I'm @therealsatria
+# Hi there! 👋 I'm Satria Nugraha
 
 ## 💻 Software Developer
 
