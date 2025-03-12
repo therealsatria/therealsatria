@@ -5,6 +5,12 @@
 I specialize in backend development with a passion for building robust and scalable solutions.
 
 ### 🛠️ Tech Stack
+<p>
+  <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+  <img alt="F#" src="https://img.shields.io/badge/F%23-378BBA?style=flat-square&logo=.net&logoColor=white" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
+</p>
 
 #### Backend
 - `.NET` ecosystem
@@ -38,12 +44,9 @@ All my repositories are open source! Feel free to explore, use, and contribute. 
 ---
 ⭐️ From [therealsatria](https://github.com/therealsatria)
 
-```html
-<!-- Add this to show your tech stack badges -->
 <p>
   <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
   <img alt="F#" src="https://img.shields.io/badge/F%23-378BBA?style=flat-square&logo=.net&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
 </p>
-```
