@@ -31,4 +31,5 @@ I specialize in backend development with a passion for building robust and scala
 
 ### 🤝 Open Source
 
-All my repositories are open source! Feel free to explore, use, and contribute. I believe in sharing knowledge and helping others learn from my work.
+All my repositories are open source! Feel free to explore, use, and contribute. 
+I believe in sharing knowledge and helping others learn from my work.
