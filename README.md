@@ -1,6 +1,6 @@
-## Hi there! 👋 I'm Satria Nugraha
+### Hi there! 👋 I'm Satria Nugraha
 
-## 💻 Software Developer
+### 💻 Software Developer
 
 I specialize in backend development with a passion for building robust and scalable solutions.
 
